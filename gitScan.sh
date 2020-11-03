@@ -1,14 +1,17 @@
 #!/bin/bash
 workingDir=/home/michaelmcpherson/src;
-ls $workingDir > 'gitScan2.config';
+#ls $workingDir > 'gitScan2.config';
 runDir=$(pwd);
 while read line;
 do
 	cd "$workingDir/$line";
 	echo $(pwd);
-	#git add .;
-	git pull;
-	git log;
+	git add .;
+	git commit -m "gitScan push";
+	git push;
+	#possible password solution
+	#git pull "https://michael@mpmcpherson.com:Adein1Dva2!@github.com/mpmcpherson/<repository_name>.git" <master>
+	#git log;
 	cd $runDir;
 	#echo $line
 done < gitScan2.config
