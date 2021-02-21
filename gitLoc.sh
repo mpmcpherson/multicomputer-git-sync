@@ -12,6 +12,8 @@ for line in $lsVal; do
 		cd "$workingDir/$line";
 		if [ $(ls -d .git)=='.git' ];
 		then
+			git fetch
+			git pull
 			git add -A;
 			git commit -m "autocommit $(date)";
 			git push;
