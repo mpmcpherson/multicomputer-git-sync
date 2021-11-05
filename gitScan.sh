@@ -1,5 +1,6 @@
 #!/bin/bash
-workingDir=/home/michaelmcpherson/src;
+
+workingDir=~/src;
 runDir=$(pwd);
 
 cd "$workingDir";
