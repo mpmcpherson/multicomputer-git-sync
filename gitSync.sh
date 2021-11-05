@@ -33,8 +33,8 @@ for line in $lsVal; do
 			gitURL=$(git config --get remote.origin.url);
 			if [ ! $( grep $gitURL $runDir/$gitConf ) ];
 			then
-				$gitURL >> $runDir/$gitConf;
-				"\n" >> $runDir/$gitConf;
+				printf $gitURL >> $runDir/$gitConf;
+				printf '\n' >> $runDir/$gitConf;
 			fi
 
 		fi
