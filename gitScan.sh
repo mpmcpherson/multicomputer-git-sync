@@ -12,7 +12,7 @@ for line in $lsVal; do
 	then
 		cd "$workingDir/$line";
 		pwd;
-		if [ $(ls -d .git)='.git' ];
+		if [[ $(ls )==*'.git'* ]];
 		then
 		    git fetch;
 		    git pull;
