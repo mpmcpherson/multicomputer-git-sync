@@ -29,11 +29,12 @@ for line in $lsVal; do
 		    git push;
 
 		    #this...might append this info to the config file. Might blow up.
+		    gitConf="gitrecurse/projectlist.config"
 			gitURL=$(git config --get remote.origin.url);
-			if [ $( grep $gitURL $runDir/gitrecurse/projectlist.config ) ]
+			if [ $( grep $gitURL $runDir/$gitConf ) ];
 			then
-				$gitURL >> $runDir/"gitrecurse/projectlist.config";
-				"\n" >> $runDir/"gitrecurse/projectlist.config";
+				$gitURL >> $runDir/$gitConf;
+				"\n" >> $runDir/$gitConf;
 			fi
 
 		fi
