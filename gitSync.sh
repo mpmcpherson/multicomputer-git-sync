@@ -3,7 +3,7 @@
 #move to src folder; assume that src is right off home
 workingDir=~/src;
 runDir=$(pwd);
-gitList=$( cat projectlist.config );
+gitList=$( cat gitrecurse/projectlist.config );
 
 #sync non-local projects to this machine
 for entry in $gitList; do
@@ -30,10 +30,10 @@ for line in $lsVal; do
 
 		    #this...might append this info to the config file. Might blow up.
 			gitURL=$(git config --get remote.origin.url);
-			if [ $( grep $gitURL $runDir/projectlist.config ) ]
+			if [ $( grep $gitURL $runDir/gitrecurse/projectlist.config ) ]
 			then
-				$gitURL >> $runDir/"projectlist.config";
-				"\n" >> $runDir/"projectlist.config";
+				$gitURL >> $runDir/"gitrecurse/projectlist.config";
+				"\n" >> $runDir/"gitrecurse/projectlist.config";
 			fi
 
 		fi
