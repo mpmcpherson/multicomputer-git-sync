@@ -11,6 +11,7 @@ for line in $lsVal; do
 	if [ $line != 'notMine' ];
 	then
 		cd "$workingDir/$line";
+		pwd;
 		if [ $(ls -d .git)=='.git' ];
 		then
 		    git fetch;
