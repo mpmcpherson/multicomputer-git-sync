@@ -39,6 +39,7 @@ for line in $lsVal; do
 
 		fi
 		cd $runDir;
+		printf '\n';
 	fi
 done
 
