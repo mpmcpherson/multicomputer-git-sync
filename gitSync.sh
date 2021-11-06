@@ -31,7 +31,7 @@ for line in $lsVal; do
 		    #this...might append this info to the config file. Might blow up.
 		    gitConf="gitrecurse/projectlist.config"
 			gitURL=$(git config --get remote.origin.url);
-			if [ ! $( grep -i $gitURL $runDir/$gitConf ) ];
+			if [ ! $( grep $gitURL $runDir/$gitConf ) ];
 			then
 				printf $gitURL >> $runDir/$gitConf;
 				printf '\n' >> $runDir/$gitConf;
