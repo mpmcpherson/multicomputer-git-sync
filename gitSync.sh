@@ -18,7 +18,7 @@ cd $runDir;
 for line in $lsVal; do
 	if [ $line != 'notMine' ];
 	then
-		cd "$workingDir/$line";
+		cd "$workingDir/$line"; 
 		pwd;
 		if [ -e '.git' ];
 		then
