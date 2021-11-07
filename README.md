@@ -9,9 +9,9 @@ That's where this little script comes in. It lets a user sync existing projects 
 ### Assumptions
 
 Of course, there are Assumptions. 
->that the place where your source code lives in directly off the home directory (~)
->that your source folder is called 'src'
->that any git project you *don't* want to copy lives in a subfolder of src called 'notMine'
+* that the place where your source code lives in directly off the home directory (~)
+* that your source folder is called 'src'
+* that any git project you *don't* want to copy lives in a subfolder of src called 'notMine'
 
 
 I may correct these assumptions at some point, or I may not. It works for me.
