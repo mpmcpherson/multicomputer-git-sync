@@ -2,7 +2,7 @@
 
 It just always seems to work out that way. 
 
-No worries, I guess. But when I'm away from a computer that I *had* an idea on and then I end up wanting to keep working on it, sometimes I don't remember exactly which repo it was in. That's just the way my mind works --if I had the repo name right in from of me, it would be easy, but the whole issue is that it's not there.
+No worries, I guess. But when I'm away from a computer that I *had* an idea on and then I end up wanting to keep working on it, sometimes I don't remember exactly which repo it was in. That's just the way my mind works --if I had the repo name right in front of me, it would be easy, but the whole issue is that it's not there.
 
 That's where this little script comes in. It lets a user sync existing projects in git with one command. 
 
