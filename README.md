@@ -19,3 +19,7 @@ I may correct these assumptions at some point, or I may not. It works for me.
 Another issue: the first thing the script does is '''git clone''' all the project urls stored in your projectlist.config file. If they're already in your src folder, it will give you the standard 'this directory already exists and is not empty' error. Don't worry about that; when the script gets to the syncing section, it *will* sync that folder. 
 
 That's another thing I may or may not fix. Depends how annoyed I get with it. 
+
+If this makes life easier for you, feel free to appropriate or alter it as you see fit. 
+
+Happy hacking!
