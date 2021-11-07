@@ -20,6 +20,7 @@ for line in $lsVal; do
 	then
 		cd "$workingDir/$line"; 
 		pwd;
+		printf '\n';
 		if [ -e '.git' ];
 		then
 		    git fetch;
