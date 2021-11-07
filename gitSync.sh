@@ -43,8 +43,3 @@ for line in $lsVal; do
 		printf '\n';
 	fi
 done
-
-
-#grep -qxF 'include "/configs/projectname.conf"' foo.bar || echo 'include "/configs/projectname.conf"' >> foo.bar
-
-#git config --get remote.origin.url
